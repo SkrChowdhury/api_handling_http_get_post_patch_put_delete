@@ -29,10 +29,9 @@ class Todo {
       );
 
   Map<String, dynamic> toJson() => {
-        "userId": userId,
-        "id": id,
-        "title": title,
-        "completed": completed,
+        "userId": userId.toString(),
+        "id": id.toString(),
+        "title": title.toString(),
+        "completed": completed.toString(),
       };
 }
-

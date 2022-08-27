@@ -13,6 +13,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'REST API',
       theme: ThemeData(
         // This is the theme of your application.
@@ -20,7 +21,6 @@ class Application extends StatelessWidget {
         primarySwatch: Colors.blue,
         primaryColor: Colors.orange[100],
         appBarTheme: const AppBarTheme(elevation: 0.0),
-        
       ),
       home: const HomeScreen(),
     );
